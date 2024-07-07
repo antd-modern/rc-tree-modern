@@ -1,5 +1,5 @@
 {
-  "name": "rc-tree",
+  "name": "rc-tree-modern",
   "version": "5.8.8",
   "description": "tree ui component for react",
   "engines": {
@@ -33,8 +33,6 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d dist",
     "compile": "father build && lessc assets/index.less assets/index.css",
-    "prepublishOnly": "npm run compile && np --yolo --no-publish",
-    "postpublish": "npm run gh-pages",
     "lint": "eslint src/ --ext .tsx,.ts,.jsx,.js",
     "test": "rc-test",
     "coverage": "rc-test --coverage",
@@ -50,6 +48,7 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.10",
+    "@types/node": "^20.14.10",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.2.17",
     "@types/warning": "^3.0.0",
@@ -74,8 +73,8 @@
   "dependencies": {
     "@babel/runtime": "^7.10.1",
     "classnames": "2.x",
-    "rc-motion": "^2.0.1",
-    "rc-util": "^5.16.1",
-    "rc-virtual-list": "^3.5.1"
+    "rc-motion": "npm:rc-motion-modern@^2.0.1",
+    "rc-util": "npm:rc-util-modern@^5.16.1",
+    "rc-virtual-list": "npm:rc-virtual-list-modern@^3.5.1"
   }
 }
